@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/update_target"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Target" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Target Loading" 
+        android:gravity="center"
+        android:textSize="30sp"
+        android:paddingBottom="50px"/>
+
+    <Button
+        android:id="@+id/killed_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Killed In Action" 
+        android:textSize="50sp"/>
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+     <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/addplayer"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:gravity="center"/>
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center" >
+    <EditText
+        android:id="@+id/ap_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="20" 
+        android:hint="Username">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/ap_alias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="20" 
+        android:hint="Name"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/add_player_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/addplayer" 
+           />
+
+        <Button
+            android:id="@+id/start_game_buton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Game" />
+       
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/addedplayerslist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+ 
+    </LinearLayout>
+</LinearLayout>
